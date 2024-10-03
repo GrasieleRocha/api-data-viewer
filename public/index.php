@@ -12,7 +12,7 @@
         <div class="city-select">
             <label for="citySelect">Escolha a cidade:</label>
             <select id="citySelect">
-                <option value=""> Selecionar </option>
+                <option value="">------------ </option>
             </select>
         </div>
         <div class="weather-info">
@@ -57,7 +57,7 @@
                 alert('Por favor, selecione uma cidade.');
                 return;
             }
-            const apiKey = 'YOUR_API_KEY'; // Substitua pela sua chave da API
+            const apiKey = 'YOUR_API_KEY';
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},BR&appid=162e6102723d177e604ddf8c493ce8a9&units=metric&lang=pt_br`;
 
             fetch(url)
