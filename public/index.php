@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Clima</title>
     <link rel="stylesheet" href="index.css">
-    </head>
+</head>
 <body>
     <div class="container" id="weatherContainer">
         <h1>Consulte o Clima</h1>
         <div class="city-select">
             <label for="citySelect">Escolha a cidade:</label>
             <select id="citySelect">
-                <option value="">Selecione uma cidade</option>
+                <option value=""> Selecionar </option>
             </select>
-            <div class="container">
-    <div class="weather-info">
-        <div class="card">
-            <p id="city">Cidade: --</p>
         </div>
-        <div class="card">
-            <p id="temperature">Temperatura: -- °C</p>
-        </div>
-        <div class="card">
-            <p id="visibility">Visibilidade: -- km</p>
-        </div>
-        <div class="card">
-            <p id="windspeed">Velocidade do Vento: -- m/s</p>
-        </div>
-        <div class="card">
-            <p id="description">Descrição: --</p>
+        <div class="weather-info">
+            <div class="card">
+                <p id="city">Cidade: --</p>
+            </div>
+            <div class="card">
+                <p id="temperature">Temperatura: -- °C</p>
+            </div>
+            <div class="card">
+                <p id="visibility">Visibilidade: -- km</p>
+            </div>
+            <div class="card">
+                <p id="windspeed">Velocidade do Vento: -- m/s</p>
+            </div>
+            <div class="card">
+                <p id="description">Descrição: --</p>
+            </div>
         </div>
     </div>
-</div>
     <script>
         function populateCities() {
             const cities = [
@@ -49,17 +49,6 @@
                 option.textContent = city;
                 selectElement.appendChild(option);
             });
-        }
-
-        function updateContainerBackground(temperature) {
-            const container = document.getElementById('weatherContainer');
-            if (temperature >= 30) {
-                container.style.backgroundImage = "url('vermelho.png')";
-            } else {
-                container.style.backgroundImage = "url('azul.png')";
-            }
-            container.style.backgroundSize = "cover"; // Ajusta para cobrir todo o contêiner
-            container.style.backgroundPosition = "center"; // Centraliza a imagem
         }
 
         function getWeatherData() {
@@ -89,10 +78,6 @@
                     document.getElementById('visibility').textContent = `Visibilidade: ${visibility} km`;
                     document.getElementById('windspeed').textContent = `Velocidade do Vento: ${windSpeed} m/s`;
                     document.getElementById('description').textContent = `Descrição: ${description}`;
-
-                    updateContainerBackground(temperature); // Atualiza o fundo do contêiner com base na temperatura
-
-                    
                 })
                 .catch(error => {
                     console.error('Erro:', error);

@@ -12,18 +12,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 
 .container {
   width: 90%;
-  max-width: 80%;
-  margin: 50px auto;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 40px 20px 20px;
+  max-width: 1200px; /* Aumenta a largura máxima para telas maiores */
+  margin: 10% auto;
+  background: rgba(255, 255, 255, 0.3); /* Aumenta a opacidade do fundo */
+  padding: 60px 20px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   text-align: center;
+  padding-bottom: 40px; 
 }
 
 h1 {
@@ -46,21 +46,23 @@ select {
 }
 
 .weather-info {
-  background-color: #fafafa;
+  background: rgba(236, 233, 233, 0.8);
   padding: 20px;
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: space-between; /* Distribui os cards uniformemente */
+  gap: 20px;
   max-width: 100%;
-  width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha */
+
 }
 
 .card {
-  flex: 1 1 200px;
-  background: rgba(236, 233, 233, 0.1);
+  height: 90px;
+  flex: 1 1 200px; /* Pode crescer, encolher e ter largura mínima de 200px */
+  background: rgba(236, 233, 233, 0.9); /* Aumenta a opacidade do fundo dos cards */
   padding: 20px;
+
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -68,10 +70,10 @@ select {
 
 @media (max-width: 768px) {
   .weather-info {
-    flex-direction: column;
+    flex-direction: column; /* Alinha os cards verticalmente em telas menores */
   }
 
   .card {
-    flex: 1 1 100%;
+    flex: 1 1 100%; /* Faz com que os cards ocupem 100% da largura em telas pequenas */
   }
 }
