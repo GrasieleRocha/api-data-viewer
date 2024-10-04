@@ -111,7 +111,9 @@ Esta aplicação utiliza a [Weather API](https://www.weatherapi.com/). Para obte
 
 
 ### Processo de Desenvolvimento
-![Processo de Desenvolvimento](link_para_imagem_do_processo_de_desenvolvimento)
+
+![How to Develop a Brand (2)](https://github.com/user-attachments/assets/05c6dc11-dd8c-4bd7-9c44-773087f2a8a4)
+
 
 
 <br>
