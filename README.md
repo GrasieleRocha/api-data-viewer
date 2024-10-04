@@ -4,9 +4,6 @@
 
 <br>
 
-#### Deploy: https://climaprevisao.netlify.app/
-<br>
-
 
 ## Funcionalidades
 
