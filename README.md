@@ -18,8 +18,6 @@
 ## Ferramentas e Tecnologias Utilizadas
 
 
-
-
 - **Front-End**: ![HTML Badge](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS Badge](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - **Back-End**: ![Laravel Badge](https://img.shields.io/badge/Laravel-EF3E30?style=for-the-badge&logo=laravel&logoColor=white) 
@@ -89,6 +87,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 8. **Acesse o projeto no navegador**:
    [http://localhost:8000](http://localhost:8000)
 
+<br>
 
 
 ## Capturas de Tela
