@@ -5,11 +5,15 @@
 <br>
 
 
+## Objetivo
+Esta aplicação permite ao usuário consultar o clima de uma cidade selecionada, exibindo informações detalhadas sobre temperatura, visibilidade, velocidade do vento e uma breve descrição do clima. Os dados são obtidos da API Weather API e armazenados no banco de dados PostgreSQL.
+
+<br>
+
 ## Funcionalidades
 
 - O projeto permite selecionar uma cidade e buscar os dados climáticos da mesma.
-- Exibe a temperatura, visibilidade, velocidade do vento e uma descrição do clima para a cidade escolhida.
-- Os dados consumidos da API Weather API são tratados pelo back-end e são salvos no banco PostgreSql.
+
 
   <br>
 
@@ -87,6 +91,10 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 <br>
 
+## API Utilizada
+Esta aplicação utiliza a [Weather API](https://www.weatherapi.com/). Para obter uma chave de API, acesse o site e crie uma conta. Após gerar a chave, adicione-a ao arquivo `.env`.
+
+<br>
 
 ## Capturas de Tela
 
