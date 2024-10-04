@@ -12,7 +12,7 @@
 
 - O projeto permite selecionar uma cidade e buscar os dados climáticos da mesma.
 - Exibe a temperatura, visibilidade, velocidade do vento e uma descrição do clima para a cidade escolhida.
-- Os dados consumidos pela api são tratados pelo back-end e são salvos no banco PostgreSql.
+- Os dados consumidos da API Weather API são tratados pelo back-end e são salvos no banco PostgreSql.
 
   <br>
 
