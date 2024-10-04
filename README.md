@@ -32,7 +32,8 @@ Esta aplicação permite ao usuário consultar o clima de uma cidade selecionada
 
 - **Editor de Código**: ![Visual Studio Code Badge](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) 
 
-- **Hospedagem e Deploy**: ![Netlify Badge](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white) 
+- **Hospedagem**: ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
 
     <br>
 
