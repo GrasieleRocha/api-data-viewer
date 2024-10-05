@@ -1,19 +1,18 @@
 <?php
-
 namespace Src;
 
 class WeatherData {
-    public $city;
-    public $temperature;
-    public $description;
+    public $cidade;
+    public $temperatura;
+    public $descrição;
 
-    public function __construct($city, $temperature, $description) {
-        $this->city = $city;
-        $this->temperature = $temperature;
-        $this->description = $description;
+    public function __construct($cidade, $temperatura, $descrição) {
+        $this->cidade = $cidade;
+        $this->temperatura = $temperatura;
+        $this->descrição = $descrição;
     }
 
     public function displayWeather() {
-        return "A temperatura em {$this->city} é {$this->temperature}°C com {$this->description}.";
+        return "A temperatura em {$this->cidade} é {$this->temperatura}°C com {$this->descrição}.";
     }
 }

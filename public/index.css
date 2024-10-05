@@ -6,12 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   color: #333;
-  background-image: url('./images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .container {
@@ -24,6 +20,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   text-align: center;
   padding-bottom: 40px;
+  background-color: rgb(219, 245, 235) ;
 }
 
 h1 {
@@ -60,7 +57,7 @@ select {
 .card {
   height: 90px;
   flex: 1 1 200px;
-  background: rgba(236, 233, 233, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
