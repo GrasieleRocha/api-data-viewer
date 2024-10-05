@@ -6,11 +6,11 @@
 
 
 ## Objetivo
-Esta aplicação permite ao usuário consultar o clima de uma cidade selecionada, exibindo informações detalhadas sobre temperatura, visibilidade, velocidade do vento e uma breve descrição do clima. Os dados são obtidos da API Weather API e armazenados no banco de dados PostgreSQL.
+Esta aplicação permite ao usuário consultar o clima de uma cidade selecionada, exibindo informações detalhadas sobre temperatura, visibilidade, velocidade do vento e uma breve descrição do clima. Os dados são obtidos da API Weather API OpenWeather.
 
 <br>
 
-## Funcionalidades
+## Funcionalidade
 
 - O projeto permite selecionar uma cidade e buscar os dados climáticos da mesma.
 
@@ -25,8 +25,6 @@ Esta aplicação permite ao usuário consultar o clima de uma cidade selecionada
 - **Back-End**: ![Laravel Badge](https://img.shields.io/badge/Laravel-EF3E30?style=for-the-badge&logo=laravel&logoColor=white) 
 
 - **Banco de Dados**: ![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) 
-
-- **Teste de API**: ![Postman Badge](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) 
 
 - **Versionamento de Código**: ![Git Badge](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) 
 
@@ -97,23 +95,66 @@ Esta aplicação utiliza a [Weather API](https://www.weatherapi.com/). Para obte
 
 <br>
 
-## Capturas de Tela
+## Inserir dados no banco  usando o Tinker
 
-### Interface do Projeto
+Siga os passos abaixo para inserir dados no banco de dados usando o Tinker no Laravel:
 
-![BOOST (2)](https://github.com/user-attachments/assets/828e12a7-52a8-4c16-a9cd-bb42eb8eb860)
+1. **Abra o terminal no diretório do seu projeto Laravel.**
 
+2. **Inicie o Tinker**, o ambiente interativo do Laravel para testar comandos do Eloquent:
+   ```bash
+   php artisan tinker
+   
+3. **Insira um novo registro de clima**:
+   Execute os seguintes comandos para criar um novo registro de clima no banco de dados:
+   ```php
+   use App\Models\Weather;
+   use Carbon\Carbon; // Para manipulação de datas
+
+   $weather = new Weather();
+
+   // Atribuindo valores às colunas
+   $weather->city = 'São Paulo';
+   $weather->temperature = 24; // Temperatura em graus Celsius
+   $weather->visibility = 10; // Exemplo de visibilidade em km
+   $weather->wind_speed = 15; // Exemplo de velocidade do vento em km/h
+   $weather->description = 'Céu limpo';
+   $weather->timestamp = Carbon::now(); // Usando a data e hora atual
+
+   // Salvando o registro no banco de dados
+   $weather->save();
+   ```
+4. Aperte a tecla enter para salvar os dados no banco;
+
+5. **Verifique se os dados foram inseridos**:
+   Para confirmar que os dados foram salvos corretamente, você pode usar o comando:
+   ```php
+   \App\Models\Weather::all();
+   ```
+6. Aperte a tecla enter para confirmar a inclusão dos dados;
+7. Após terminar, digite `exit` ou pressione `Ctrl + C` para sair do Tinker.
+   
+<br>
+
+-BANCO DE DADOS
+
+![banco](https://github.com/user-attachments/assets/3fd0a439-039e-4d70-9d44-d6c93ac7c11a)
 
 <br>
 
+## Capturas de Tela
 
+### Interface do Projeto
+Mobile e Web
 
+![BOOST (3)](https://github.com/user-attachments/assets/2c90e802-a0ec-4456-a5f8-398e41aee03a)
 
+<br>
 
 ### Processo de Desenvolvimento
 
-![How to Develop a Brand (2)](https://github.com/user-attachments/assets/05c6dc11-dd8c-4bd7-9c44-773087f2a8a4)
 
+![How to Develop a Brand (4)](https://github.com/user-attachments/assets/69f484f9-2562-4379-9fd5-04a37506af96)
 
 
 <br>
